@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+svg {
+  width: 20%;
+  height: 20%;
+  background: rgb(84, 53, 94);
+  margin-bottom: 5%;
+}
+svg polyline,
+svg line,
+svg path {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  fill: none;
+  stroke: rgb(255, 255, 255);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: 0.2s;
+}
+.svg1:hover path {
+  d: path("M2,2 L2,8");
+}
+.svg2:hover path {
+  d: path("M2,2 L5,8 L8,2");
+}
+.svg3:hover path {
+  d: path("M2,2 Q2,10 8,8");
+}
+
+.svg4:hover path {
+    d: path("M2,4,L5,6,L8,2");
+}
+
